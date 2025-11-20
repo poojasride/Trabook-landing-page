@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #f4f4f4;
+  background-color: #f7f8fc;
 }
 
 /* Header */
@@ -278,6 +278,8 @@ header {
   grid-template-columns: repeat(4, 1fr);
   gap: 22px;
   padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .location-card {
@@ -285,40 +287,59 @@ header {
   padding: 18px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease;
 }
 
 .loc-img {
   width: 100%;
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .location-card:hover {
   transform: translateY(-10px);
 }
 
-.loc-title {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 18px;
-  margin-bottom: 5px;
+.loc-details {
+  text-align: left;
 }
 
-.loc-title img {
+.loc-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 8px 0;
+}
+
+.rating-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.rating-info img {
   width: 16px;
+  margin: 0;
 }
 
 .loc-country {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 14px;
+  font-size: 1rem;
   color: #666;
+  margin: 0;
 }
 
 .loc-country img {
   width: 14px;
+  margin: 0;
 }
 
 .swipe-buttons {
@@ -345,20 +366,20 @@ header {
   background: #d66a1a;
 }
 
-.container {
-  max-width: 1200px;
-  background: #fefcfb;
-  border-radius: 10px;
-  margin: 10px auto;
-  padding: 45px 40px;
-}
-
 /* VACATION-SECTION */
 
 .vacation-section {
   margin: 80px auto;
   padding: 30px auto;
   text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  background: #fefcfb;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 45px 40px;
 }
 
 .vacation-header {
@@ -444,6 +465,7 @@ header {
 
 .card-content {
   padding: 15px 20px 20px;
+  text-align: left;
 }
 
 .vacation-card h3 {
@@ -482,6 +504,7 @@ header {
   aspect-ratio: auto;
   object-fit: contain;
 }
+/* Testimonial OR Feedback Sec */
 
 .testimonial-container {
   max-width: 1200px;
@@ -677,7 +700,7 @@ header {
 }
 
 .section-header .highlight {
-  color: #fd8d3a;;
+  color: #fd8d3a;
 }
 
 .blog-posts-grid {
@@ -771,6 +794,7 @@ header {
 .subscribe-section-container {
   padding: 20px 20px;
   text-align: center;
+  background-color: #f7f8fc;
 }
 
 .subscribe-card {
@@ -971,7 +995,7 @@ header {
 
 /* Footer Bottom */
 .footer-bottom-wrapper {
-  background-color: white;
+  background-color: #f7f8fc;
 }
 
 .footer-bottom {
@@ -994,4 +1018,3 @@ header {
   color: #888;
   text-decoration: none;
 }
-
