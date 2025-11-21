@@ -118,10 +118,65 @@ header {
   transform: scale(1.05);
 }
 
-/* Hero Image */
-.hero-right img {
+.hero-right {
   width: 500px;
+}
+
+.hero-img {
+  position: relative;
+}
+
+.hero-main-img {
+  width: 450px;
   border-radius: 20px;
+  display: block;
+}
+
+.badge {
+  position: absolute;
+}
+
+.badge img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.badge.award {
+  top: 25%;
+  left: -10%;
+  width: 150px;
+}
+
+.badge.award:hover {
+  transform: scale(1.5);
+}
+
+.badge.explore {
+  bottom: 25%;
+  left: -10%;
+  width: 200px;
+}
+
+.badge.explore:hover {
+  transform: scale(1.5);
+}
+
+.badge.review {
+  top: 40%;
+  right: -10%;
+  width: 200px;
+}
+.badge.review:hover {
+  transform: scale(1.5);
+}
+
+.badge.airoplane {
+  top: -5%;
+  right: 0;
+  width: 550px;
+  z-index: 0;
+  opacity: 0.5;
 }
 
 /* Explore Section */
@@ -789,7 +844,7 @@ header {
   border-radius: 5px;
 }
 
-/* --- Subscription Section Styling --- */
+/* --- Subscription Section --- */
 
 .subscribe-section-container {
   padding: 20px 20px;
